@@ -19,8 +19,8 @@
         <Button
             android:id="@+id/btnBrowser"
             android:onClick="openBrowser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/browser"
             android:text="Buka Browser"/>
@@ -32,20 +32,21 @@
         <Button
             android:id="@+id/btnGoogleMaps"
             android:onClick="openMaps"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
             android:drawableLeft="@drawable/marker"
             android:text="Buka di Google Maps"/>
         <EditText
             android:id="@+id/etStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tuliskan Perasaan Anda"/>
+            android:hint="Tuliskan Pesan Anda"/>
         <Button
             android:id="@+id/btnShare"
             android:onClick="shareStatus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
             android:drawableLeft="@drawable/share"
             android:text="SHARE"/>

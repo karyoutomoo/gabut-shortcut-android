@@ -2,6 +2,7 @@ package com.itsjustfaiq.implicitintent;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -54,12 +55,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void shareStatus(View view){
-//        Intent intentBrowser = new Intent(Intent.ACTION_VIEW, webpage);
-//        if(intentMaps.resolveActivity(getPackageManager()) != null){
-//            startActivity(intentBrowser);
-//        }else{
-//            Log.d("ImplicitIntents","Can't handle request!");
-//            Toast.makeText(MainActivity.this,"gagal share!", Toast.LENGTH_SHORT).show();
-//        }
+        String status = etStatus.getText().toString();
+        ShareCompat.IntentBuilder
+                .from(this)
+                .setType("text/plain")
+                .setChooserTitle("Share this text with: ")
+                .setText(status)
+                .startChooser();
     }
 }
